@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-FROM eclipse-temurin:17-jre-jammy
+FROM someapp:latest
 
 ARG spark_uid=185
 
