@@ -68,6 +68,12 @@ RUN set -ex; \
     cd ..; \
     rm -rf "$SPARK_TMP";
 
+RUN set -ex; \
+    apt-get update; \
+    apt-get install -y python3 python3-pip; \
+    rm -rf /var/lib/apt/lists/*
+
+
 COPY entrypoint.sh /opt/
 
 ENV SPARK_HOME /opt/spark
