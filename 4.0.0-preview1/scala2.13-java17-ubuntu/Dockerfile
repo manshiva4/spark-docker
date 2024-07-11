@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-FROM someapp:latest
+FROM eclipse-temurin22-2404ubuntu
 
 ARG spark_uid=185
 
